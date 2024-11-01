@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { CounterOutputComponent } from './counter-output/counter-output.component';
+import { CounterControlsComponent } from './counter-controls/counter-controls.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [CounterOutputComponent, CounterControlsComponent],
 })
-export class AppComponent {
-  title = 'ng-rx-intro';
-}
+export class AppComponent {}
